@@ -1,0 +1,3 @@
+# 忽略文件夹
+/node_modules/*
+/dist/*
