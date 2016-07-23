@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     .docs .top-bar{height:40px;line-height:40px;text-align:center;background:#767B84;color:white;}
     .docs .top-bar>span{margin:0 8px;}
 </style>
@@ -62,7 +62,6 @@
         route:{
             data({next}){
                 this.$root.title = '学习资料管理';
-                console.log('hello');
                 setTimeout(()=>{
                     next();
                 },2000)

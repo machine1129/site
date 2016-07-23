@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     .knowledge .top-bar{height:40px;line-height:40px;text-align:center;background:#767B84;color:white;}
     .knowledge .top-bar>span{margin:0 8px;}
 </style>
@@ -62,7 +62,6 @@
         route:{
             data({next}){
                 this.$root.title = '知识库管理';
-                console.log('hello');
                 setTimeout(()=>{
                     next();
                 },2000)

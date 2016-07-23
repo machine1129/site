@@ -7,7 +7,7 @@
 				<li v-link="{path:'/train/overview'}"><i class="iconfont icon icon-meeting"></i>模块一</li>
 				<li v-link="{path:'/train/category'}"><i class="iconfont icon icon-class"></i>模块二</li>
 				<li v-link="{path:'/train/question'}"><i class="iconfont icon icon-wentiziyuanku02"></i>模块三</li>
-				<li v-link="{path:'/train/exam'}"><i class="iconfont icon icon-iconkaoshitongzhi"></i>模块四</li>
+				<li v-link="{path:'/train/exam'}"><i class="iconfont icon icon-iconkaoshitongzhi"></i>考试列表</li>
 				<li v-link="{path:'/train/docs'}"><i class="iconfont icon icon-shu"></i>模块五</li>
 				<li v-link="{path:'/train/knowledge'}"><i class="iconfont icon icon-shujia2"></i>模块六</li>
 				<li v-link="{path:'/train/course'}"><i class="iconfont icon icon-peixunzhichi"></i>模块七</li>

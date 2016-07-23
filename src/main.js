@@ -12,7 +12,7 @@ window.Vue = Vue;
 Vue.config.debug = true;
 
 import {map,alias} from './config/router.config.js'
-import App from './base/app.vue'
+import App from './component/base/app.vue'
 
 Vue.use(VueResource);
 Vue.http.options.emulateJSON = true;

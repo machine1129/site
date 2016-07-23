@@ -1,15 +1,10 @@
-<style>
+<style scoped>
     .lecturer .top-bar{height:40px;line-height:40px;text-align:center;background:#767B84;color:white;}
     .lecturer .top-bar>span{margin:0 8px;}
 </style>
 <template>
 <div class="lecturer">
     <header style="height:60px;">
-        
-        <select class="weui_select" name="select2" v-model="selected">
-            <option value="">请选择公司</option>
-            <option v-for="item in companyList" :value="item.id">{{item.name}}</option>
-        </select>
     </header>
     <div>
         <div class="top-bar">
@@ -68,7 +63,6 @@
         route:{
             data({next}){
                 this.$root.title = '讲师管理';
-                console.log('hello');
                 setTimeout(()=>{
                     next();
                 },2000)

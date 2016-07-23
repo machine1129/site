@@ -95,7 +95,6 @@
                 this.$log('addQuery');
                 this.$root.isLoading = true;
                 this.service.addExam(this.addQuery).then(data=>{
-                    console.log(data);
                     this.queryData.push(data);
                     this.isShowDialog = false;
                 },err=>{

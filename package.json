@@ -4,9 +4,6 @@
   "description": "Training And Examination System",
   "main": "main.js",
   "scripts": {
-    "webpack-dev": "webpack-dev-server --hot --inline",
-    "build-more": "webpack -p --config ./config/webpack.build.config.js",
-    "build-webpack": "webpack -p",
     "build": "cd ./src && gulp",
     "dev": "cd ./src && gulp --dev"
   },
@@ -35,6 +32,7 @@
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "gulp": "^3.9.1",
+    "gulp-connect": "^4.2.0",
     "gulp-replace": "^0.5.4",
     "gulp-rev-all": "^0.8.24",
     "gulp-util": "^3.0.7",

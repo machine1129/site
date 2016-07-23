@@ -165,7 +165,7 @@ a:hover{text-decoration:underline;}
 .xa-aside nav li{padding:10px 0;height:40px;line-height:40px;border-bottom:1px solid rgba(255,255,255,0.1);cursor:pointer;transition:0.3s;}
 .xa-aside nav li.active{color:#eee;}
 .xa-aside nav li>.icon{width:50px;height:40px;display:inline-block;text-align:center;font-size:24px;}
-.xa-aside .logo{height:60px;background:url(../images/logo.png) center no-repeat #268DFF;color:white;}
+.xa-aside .logo{height:60px;background:url(./images/logo.png) center no-repeat #268DFF;color:white;}
 .xa-aside .user{height:80px;line-height:80px;text-align:center;}
 .xa-aside .user>span:first-child{color:#eee;}
 .xa-aside .user>a{color:#8b94ae;cursor:pointer;text-decoration:none;}

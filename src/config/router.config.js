@@ -5,7 +5,7 @@
 */
 var registerComponent = name => {
     var url = "./views" + name + ".js";
-    var v = VERSION && VERSION[url] ? '?v=' + VERSION[url] : '';
+    var v = window.VERSION && VERSION[url] ? '?v=' + VERSION[url] : '';
     return resolve=>{
         Vue.http.get(url+v).then(rs => {
             resolve(Function("return "+rs.data)());
@@ -59,7 +59,7 @@ var map = {
     },
 };
 var alias = {
-    // '/commonPage/mapPlant':'/map/commonPage/mapPlantNew',
+    '/':'/login',
 };
 var redirect = {
 

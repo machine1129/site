@@ -9,7 +9,7 @@
 <script>
 /*培训模块 入口*/ 
 const trainService = require('service/train');
-import xaSidebar from '../../base/aside.vue';
+import xaSidebar from '../../component/base/aside.vue';
 import xaDate from '../../component/Datepicker.vue'
 import xaPrompt from '../../component/prompt.vue'
 import xaPaging from '../../component/paging.vue'

@@ -62,7 +62,6 @@
         route:{
             data({next}){
                 this.$root.title = '培训课程管理';
-                console.log('hello');
                 setTimeout(()=>{
                     next();
                 },2000)

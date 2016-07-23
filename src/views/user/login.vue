@@ -4,7 +4,7 @@
         .login-box{box-shadow:0 0 5px #ccc;}
     }
     @media screen and (min-width:600px) {
-        .login-form{background:url(../../images/bg_login.png) rgba(80,80,80,0.7);background-size:cover;}
+        .login-form{background:url(../../common/images/bg_login.png) rgba(80,80,80,0.7);background-size:cover;}
     }
     .login-form{height:100%;}
     .login-box{width:360px;background:white;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
@@ -47,6 +47,7 @@
         },
         methods:{
             submitLogin(){
+                if(this.$root.isLoading == true) return;
                 this.btnName = '登录中，请稍后...'
                 this.$root.isLoading = true;
                 Service.login(this.query).then(data=>{

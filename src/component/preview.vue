@@ -1,4 +1,4 @@
-<style>
+<style scoped>
 	.preview{position:fixed;top:0;left:0;z-index:1000;transition:0.2s;border:5px solid white;box-shadow:3px 3px 20px #666,0 0 8px #666 inset;background:rgba(0,0,0,0.5);max-width:90%;max-height:90%;overflow:hidden;min-height:100px;min-width:100px;}
 	.preview .preview-box{height:100%;width:100%;}
 	.preview .preview-box>img{max-height:100%;max-width:100%;}

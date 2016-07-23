@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     .overview .top-bar{display:flex;padding:15px 0 25px 0;text-align:center;background:#353B4B;color:white;}
     .overview .top-bar>div{flex:1;border-left:1px solid rgba(255,255,255,0.1);}
     .overview .top-bar>div:first-child{border-left:0;}
@@ -25,7 +25,7 @@
         <div @click="submitSearch" class="xa-btn xa-bg-blue-click">筛选</div>
     </header>
     <div class="top-bar">
-        <div class="datas"><div class="number">82</div><div>培训期数/次</div></div>
+        <div class="datas"><div class="number">72</div><div>培训期数/次</div></div>
         <div class="datas"><div class="number">3526</div><div>学员人次/次</div></div>
         <div class="datas"><div class="number">532</div><div>总课时/小时</div></div>
     </div>

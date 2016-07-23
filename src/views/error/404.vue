@@ -1,16 +1,13 @@
 <template>
-	<div>
-		<div>
-		  <div>404</div>
-		  <div>404</div>
-		</div>
+	<div style="text-align:center;">
+		<h1>404</h1>
 	</div>
 </template>
 <script>
 export default {
 	route:{
 		data(){
-			this.$root.root.title = '404页面';
+			this.$root.title = '404页面';
 		}
 	}
 }

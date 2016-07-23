@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     .exam-info .top-bar{height:40px;line-height:40px;text-align:center;background:#767B84;color:white;}
     .exam-info .top-bar>span{margin:0 8px;}
     .exam-info .xa-line{border-bottom:1px solid #ccc;}

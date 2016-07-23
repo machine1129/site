@@ -1,4 +1,4 @@
-<style>
+<style scoped>
 	.paper-questions{padding-bottom:60px;}
     .paper-question:nth-child(2n){background:#F6F6F6;}
     .paper-question{border-bottom:1px solid #ddd;padding:5px 10px;}
