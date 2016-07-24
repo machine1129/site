@@ -3,7 +3,7 @@
 
 #安装
 ```
-$ git clone ...
+$ git clone https://github.com/machine1129/site.git
 $ cd site
 $ npm install  （cnpm install）
 $ npm run dev
