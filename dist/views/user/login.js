@@ -2134,7 +2134,7 @@
 	        data: function data(_ref) {
 	            var next = _ref.next;
 
-	            this.$root.title = '极飞农业培训系统登录';
+	            this.$root.title = '培训系统登录';
 	        }
 	    }
 
