@@ -5,7 +5,7 @@
 ```
 $ git clone https://github.com/machine1129/site.git
 $ cd site
-$ npm install  （cnpm install）
+$ npm install  (or 'cnpm install')
 $ npm run dev
 
 open  http://localhost:8080
