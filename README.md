@@ -1,5 +1,5 @@
 # site
-###使用vuejs框架 webpack gulp构建工具搭建的一个单入口文件按需加载模板
+###使用vuejs库 webpack配合gulp构建工具搭建的一个单入口文件按需加载的项目模板
 
 #安装
 ```
