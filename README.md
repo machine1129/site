@@ -10,6 +10,8 @@ $ npm run dev
 
 open  http://localhost:8080
 ```
+#示例
+地址：https://machine1129.github.io/site/dist/#!/
 
 #解决问题
 ```
