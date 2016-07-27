@@ -131,8 +131,8 @@ a:hover{text-decoration:underline;}
 .xa-popup .popup>.title>.close{height:50px;width:50px;position:absolute;right:0;top:0;cursor:pointer;}
 .xa-popup .popup>.title>.close:after{content:'×';display:block;text-align:center;color:white;font-size:40px;line-height:44px;}
 .xa-popup .popup>.title>.close:hover{background:#008ae2;}
-.xa-popup .popup>.buttons{display:flex;}
-.xa-popup .popup>.buttons .button{flex:1;text-align:center;cursor:pointer;height:40px;line-height:40px;box-shadow:0 0 1px #ccc;}
+.xa-popup .popup>.buttons{display:flex;margin:0 10px;}
+.xa-popup .popup>.buttons .button{flex:1;text-align:center;cursor:pointer;height:40px;line-height:40px;box-shadow:0 0 1px #ccc;margin:10px;border-radius:5px;}
 
 .xa-tab{display:-webkit-box;height:40px;line-height:40px;border:1px solid #eee;}
 .xa-tab>div{-webkit-box-flex:1;text-align:center;border-right:1px solid #eee;width:50%;}

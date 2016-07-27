@@ -69,20 +69,20 @@
         },
         methods:{
             getQueryData(){
-                this.$root.isLoading = true;
+                this.$dispatch('isLoading',true);
                 this.service.getQuestionList(this.query).then(data=>{
                     if(!data) return;
                     this.queryData = data;
                 },err=>{
                     err && alert(err);
                 }).finally(()=>{
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                 })
             }
         },
         route:{
             data({next}){
-                this.$root.title = '题库管理';
+                this.$dispatch('documentTitle','题库管理');
             }
         },
         ready(){

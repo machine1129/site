@@ -93,7 +93,7 @@
                         },
                         {
                             text:'下一步',
-                            className:'xa-bg-blue',
+                            className:'xa-bg-blue-click',
                             clickEvent:'toNextStepEvent'
                         }
                     ],
@@ -169,7 +169,7 @@
                         },
                         {
                             text:'下一步',
-                            className:'xa-bg-blue',
+                            className:'xa-bg-blue-click',
                             clickEvent:'toNextStepEvent'
                         }
                     ]

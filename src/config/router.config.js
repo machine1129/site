@@ -8,7 +8,8 @@ var registerComponent = name => {
     var v = window.VERSION && VERSION[url] ? '?v=' + VERSION[url] : '';
     return resolve=>{
         Vue.http.get(url+v).then(rs => {
-            resolve(Function("return "+rs.data)());
+            //判断第一个字符是否为！并去掉，临时处理，要不然build模式webpack压缩会报错
+            resolve(Function("return "+(rs.data[0] == '!' ? rs.data.substring(1) : rs.data ))());
             // resolve(eval(rs.data));
         });   
     }
@@ -53,6 +54,9 @@ var map = {
     },
     '/login':{
         component:registerComponent("/user/login")
+    },
+    '/demo/vuex':{
+        component:registerComponent("/demo/vuex")
     },
     '*':{
         component:registerComponent('/error/404')

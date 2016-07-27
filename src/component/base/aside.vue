@@ -30,11 +30,11 @@ export default {
     },
     methods:{
     	logout(){
-    		this.$root.isLoading = true;
+    		this.$dispatch('isLoading',true);
     		Xa.get('/exams/public/loginOut').then(()=>{
     			Router.go('/login?goto='+this.$route.path);
     		}).finally(()=>{
-                this.$root.isLoading = false;
+                this.$dispatch('isLoading',false);
             })
     	}
     },

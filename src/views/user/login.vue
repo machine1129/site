@@ -49,9 +49,9 @@
             submitLogin(){
                 if(this.$root.isLoading == true) return;
                 this.btnName = '登录中，请稍后...'
-                this.$root.isLoading = true;
+                this.$dispatch('isLoading',true);
                 Service.login(this.query).then(data=>{
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                     this.btnName = '登录成功'
                     if(data && data.name){
                         window.localStorage.userName = data.name;
@@ -60,13 +60,13 @@
                 },err => {
                     this.btnName = '登录失败，点击重新登录'
                 }).finally(()=>{  
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                 })
             }
         },
         route:{
             data({next}){
-                this.$root.title = '极飞农业培训系统登录';
+                this.$dispatch('documentTitle','培训系统登录');
             }
         }
 

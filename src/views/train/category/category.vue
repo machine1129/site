@@ -111,17 +111,17 @@
         },
         methods:{
             getQueryData(){
-                this.$root.isLoading = true;
+                this.$dispatch('isLoading',true);
                 this.service.getCategoryList(this.query).then(data=>{
                     this.queryData = data;
                 }, err => {
                     err && alert(err);
                 }).finally(()=>{
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                 })
             },
             save(){
-                this.$root.isLoading = true;
+                this.$dispatch('isLoading',true);
                 this.service.addCategory(this.classQuery).then(data=>{
                     if(this.currentClass){
                         if(this.classQuery.id){     //编辑
@@ -146,12 +146,12 @@
                 },err => {
                     err && alert(err);
                 }).finally(()=>{
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                 })
             },
             forbid(item){
                 // status:1 正常  2禁用
-                this.$root.isLoading = true;
+                this.$dispatch('isLoading',true);
                 var status = item.status == 1 ? 2 : 1;
                 this.service.forbidCategory({id:item.id,status,ids:JSON.stringify(item.ids)}).then(data=>{
                     item.status = status;
@@ -159,7 +159,7 @@
                 },err => {
                     err && alert(err);
                 }).finally(()=>{
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                 })
             },
             addRootClass(){
@@ -172,7 +172,8 @@
         props:['service'],
         route:{
             data({next}){
-                this.$root.title = '分类管理';
+                this.$dispatch('documentTitle','分类管理');
+
             }
         },
         components:{

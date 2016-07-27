@@ -61,7 +61,7 @@
         },
         route:{
             data({next}){
-                this.$root.title = '知识库管理';
+                this.$dispatch('documentTitle','知识库管理');
                 setTimeout(()=>{
                     next();
                 },2000)

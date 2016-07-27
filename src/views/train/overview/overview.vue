@@ -82,16 +82,16 @@
         },
         route:{
             data({next}){
-                this.$root.title = '培训总览';
+                this.$dispatch('documentTitle','培训总览');
                 setTimeout(()=>{
                     next();
                 },2000)
             }
         },
         ready(){
-            this.$root.isLoading = true;
+            this.$dispatch('isLoading',true);
             setTimeout(()=>{
-                this.$root.isLoading = false;
+                this.$dispatch('isLoading',false);
                 this.queryData = {
                     page:1,
                     recordCount:121,

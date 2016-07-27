@@ -93,26 +93,26 @@
         events:{
             confirmlSubmitEvent(){
                 this.$log('addQuery');
-                this.$root.isLoading = true;
+                this.$dispatch('isLoading',true);
                 this.service.addExam(this.addQuery).then(data=>{
                     this.queryData.push(data);
                     this.isShowDialog = false;
                 },err=>{
                     err && alert(err);
                 }).finally(()=>{
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                 })
             }
         },
         methods:{
             getQueryData(){
-                this.$root.isLoading = true;
+                this.$dispatch('isLoading',true);
                 this.service.getExamList(this.query).then(data=>{
                     this.queryData = data;
                 },err=>{
                     err && alert(err);
                 }).finally(()=>{
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                 })
             },
             getTypeData(){
@@ -131,7 +131,7 @@
         },
         route:{
             data({next}){
-                this.$root.title = '考试管理';
+                this.$dispatch('documentTitle','考试管理');
             }
         },
         ready(){

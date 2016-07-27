@@ -7,7 +7,7 @@
 export default {
 	route:{
 		data(){
-			this.$root.title = '404页面';
+			this.$dispatch('documentTitle','404页面');
 		}
 	}
 }

@@ -9,16 +9,14 @@
 <script>
 /*培训模块 入口*/ 
 const trainService = require('service/train');
-import xaSidebar from '../../component/base/aside.vue';
+import xaSidebar from '../../component/base/aside.vue'
 import xaDate from '../../component/Datepicker.vue'
 import xaPrompt from '../../component/prompt.vue'
 import xaPaging from '../../component/paging.vue'
 Vue.component('xaDate',xaDate);
 Vue.component('xaPrompt',xaPrompt);
 Vue.component('xaPaging',xaPaging);
-Vue.filter('type',val=>{
-	return val==1 && '单选题' || val == 2 && '多选题' || val == 3 && '判断题' || '未知题型';
-})
+Vue.filter('type',val => val==1 && '单选题' || val == 2 && '多选题' || val == 3 && '判断题' || '未知题型')
 export default {
 	data(){
 		return {

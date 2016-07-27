@@ -61,7 +61,7 @@
         },
         route:{
             data({next}){
-                this.$root.title = '学习资料管理';
+                this.$dispatch('documentTitle','学习资料管理');
                 setTimeout(()=>{
                     next();
                 },2000)

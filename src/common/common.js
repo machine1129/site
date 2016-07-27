@@ -16,13 +16,11 @@ var httpCallback = (promise,name) => {
 
 export default {
     post(url,data = {}) {
-        data.fromUrl = window.location.href;
         if(!Vue.config.debug) return httpCallback(Vue.http.post(url,data))
         let last = url.lastIndexOf('/');
         return httpCallback(Vue.http.get('./api'+url.substring(0,last)+'.json',data),url.substring(last+1))
     },
     get(url,data = {}) {
-        data.fromUrl = window.location.href;
         if(!Vue.config.debug) return httpCallback(Vue.http.get(url,data))
         let last = url.lastIndexOf('/');
         return httpCallback(Vue.http.get('./api'+url.substring(0,last)+'.json',data),url.substring(last+1))

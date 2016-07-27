@@ -45,13 +45,13 @@
         props:['service'],
         methods:{
             getQueryData(){
-                this.$root.isLoading = true;
+                this.$dispatch('isLoading',true);
                 this.service.getExamList(this.query).then(data=>{
                     this.queryData = data;
                 },err=>{
                     err && alert(err);
                 }).finally(()=>{
-                    this.$root.isLoading = false;
+                    this.$dispatch('isLoading',false);
                 })
             },
         },
@@ -60,7 +60,7 @@
         },
         route:{
             data({next}){
-                this.$root.title = '考试详情';
+                this.$dispatch('documentTitle','考试详情');
             }
         },
         ready(){

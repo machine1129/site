@@ -62,7 +62,7 @@
         },
         route:{
             data({next}){
-                this.$root.title = '讲师管理';
+                this.$dispatch('documentTitle','讲师管理');
                 setTimeout(()=>{
                     next();
                 },2000)
